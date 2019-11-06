@@ -1,4 +1,4 @@
-from pylab import plot, show, xticks, yticks, title, xlabel, ylabel, legend
+from pylab import plot, show, xticks, yticks, title, xlabel, ylabel, legend, ylim
 x=[1,2,3,4,5,6,7,8,9,10,11,12]
 y=[6.17, 6.90, 7.41, 6.90, 6.40, 6.18, 5.17, 5.33, 5.61, 4.69, 4.87, 4.61]
 y1=[2.03,2.27,2.19, 2.32, 2.10, 1.81, 1.75, 1.50, 1.86, 1.50, 1.65, 1.72]
@@ -9,3 +9,4 @@ title("cena jednej akcji w na przestrzeni roku", color='blue')
 xlabel("miesiac")
 ylabel("cena", color='red')
 legend(['PGNiG','TAURON',])
+ylim(1,8)
