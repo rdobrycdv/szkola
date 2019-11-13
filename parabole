@@ -1,0 +1,14 @@
+from pylab import plot, show
+def list(a, b, c):
+    tabx=[]
+    for i in range(0,100):
+        tabx.append(i-50)
+    taby=[]
+    for item in tabx:
+        taby.append(int((a*(item**2))+(b*item))+c)
+    return tabx, taby,
+
+for i in range(0,10):
+    tabx, taby=list(i,i+1,i+2)
+    plot(tabx,taby)
+    show()
